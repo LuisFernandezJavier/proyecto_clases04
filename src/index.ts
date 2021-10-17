@@ -77,8 +77,10 @@ if (bicicletas != undefined){
 //Modificador -modifico el chasis-
 const modificar  = async (bici: Bicicleta | undefined)  => {
     if (bici != undefined){
-            let numserie: string  =  (await leer('Numero serie de la biciccleta a modificar'));
-            let chasisnuevo : string = (await leer('Nueo chasis'));
+            let numserie: string  
+            numserie = (await leer('Numero serie de la biciccleta a modificar'));
+            let chasisnuevo : string 
+            chasisnuevo = (await leer('Nueo chasis'));
 
             bicicletas.map(function(dato){              
             if (dato.numSerie == numserie){
