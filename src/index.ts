@@ -119,38 +119,11 @@ const borrar = async() => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// MENU
 
 
 const main = async () => {
     let n: number
-    //let aut: Bicicleta
-    //mientras no asigne valor será undefined
     do {
         n = await menuPral()
         switch(n){
